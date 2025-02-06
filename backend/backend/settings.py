@@ -11,9 +11,13 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
-
+import os
+from dotenv import load_dotenv
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+load_dotenv()
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -81,8 +85,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'todo',
-        'USER': 'sanjivthapa',
-        'PASSWORD': 'svt9741thapa12@#',
+        'USER': os.getenv('user'),
+        'PASSWORD': os.getenv('password'),
         'HOST': 'localhost',
         'PORT': '5432',
     }
