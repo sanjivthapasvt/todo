@@ -39,7 +39,7 @@ npm run server
 ```
 Make sure you run both python and npm simutenously otherwise it will not work!!
 
-Fnyway enjoy and feel free to messsage me if you face issues you can contact me via 
+Anyway enjoy and feel free to messsage me if you face issues you can contact me via 
 email: thapasvt12@gmail.com
 
 or just send message to my social link it should be available in my profile!!!
